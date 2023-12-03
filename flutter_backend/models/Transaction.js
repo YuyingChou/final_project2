@@ -17,12 +17,10 @@ const TransactionSchema = new mongoose.Schema({
       },
     image: {
         type: Buffer,
-      },
+    },
     quantity: {
         type: Number,
         required: true,
-        min: 1,
-        max: 100,
     },
     price: {
         type: Number,
@@ -52,6 +50,10 @@ const TransactionSchema = new mongoose.Schema({
     },
     sellerid: {
         type: String,
+        required: true,
+    },
+    status: {
+        type: Number,
         required: true,
     },
 },{ timestamps: true }

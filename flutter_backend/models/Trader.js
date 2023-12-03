@@ -22,6 +22,9 @@ const TraderSchema = new mongoose.Schema({
     departmentclass: {
         type: String,
     },
+    lastLogoutTime:{
+        type: Date,
+    },
 },{ timestamps: true }
 ); 
 
